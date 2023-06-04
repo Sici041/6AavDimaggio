@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mejores Bandas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mejores Bandas</h1>
+
+    <table>
+        <tr>
+            <th>Banda</th>
+            <th>Cantante</th>
+            <th>Género</th>
+        </tr>
+        <tr>
+            <td>Tan Biónica</td>
+            <td>Chano Moreno Charpentier</td>
+            <td>Pop</td>
+        </tr>
+        <tr>
+            <td>Morat</td>
+            <td>Juan Pablo Isaza</td>
+            <td>Pop</td>
+        </tr>
+        <tr>
+            <td>El Cuarteto de Nos</td>
+            <td>Roberto Musso</td>
+            <td>Rock alternativo</td>
+        </tr>
+    </table>
+</body>
+</html> 
