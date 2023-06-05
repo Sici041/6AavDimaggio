@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda Online</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .product-image {
+            max-width: 200px;
+            height: auto;
+        }
+        .product-details {
+            text-align: left;
+        }
+        .add-to-cart-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .add-to-cart-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tienda Online</h1>
+
+    <table>
+        <tr>
+            <th>Producto</th>
+                 <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>
+                
+                    <h3><a href="product.html?product=reproductor">Reproductor de MP3</a></h3>
+                    <img src="reproductor.jpg" alt="Reproductor de MP3" class="product-image" />
+                <div class="product-details">
+                                      <td>Reproductor de música portátil
+                                       <p><a href="pedidos.html" class="add-to-cart-button">Agregar al Carrito</a> <b>  $191 </b> </p></td>
+                                       
+                                     
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><a href="product.html?product=reproductor">fundas de colores </a></h3>
+                    <img src="funda.jpg" alt="fundas de colores" class="product-image" />
+                <div class="product-details">
+                                      <td>Fundas de colores 
+                                       <p><a href="pedidos.html" class="add-to-cart-button">Agregar al Carrito</a> <b> 2.50 </b> </p></td>
+                    
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><a href="product.html?product=reproductor">Reproductor de radio y control remoto </a></h3>
+                    <img src="remoto.jpg" alt="remoto" class="product-image" />
+                <div class="product-details">
+                                      <td>Reproductor de radio y control remoto 
+                                       <p><a href="pedidos.html" class="add-to-cart-button">Agregar al Carrito</a> <b> 12.99 </b> </p></td>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
