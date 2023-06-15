@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Información sobre el producto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="checkbox"], select {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      resize: vertical;
+    }
+
+    select[multiple] {
+      height: auto;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form action="procesar_formulario.php" method="POST" enctype="multipart/form-data">
+      <h2>Información sobre el producto</h2>
+
+      <h3>Datos básicos</h3>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" maxlength="100" required>
+      <br>
+
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" required></textarea>
+      <br>
+
+      <label for="foto">Foto:</label>
+      <input type="file" id="foto" name="foto">
+      <br>
+
+      <label for="contador_vistas">Contador de vistas:</label>
+      <input type="checkbox" id="contador_vistas" name="contador_vistas" value="Si">
+      <label for="contador_vistas">Mostrar contador de vistas</label>
+      <br>
+
+      <div>
+        <h3>Económico</h3>
+        <label for="precio">Precio (en euros):</label>
+        <input type="text" id="precio" name="precio" required>
+        <br>
+
+        <label for="impuestos">Impuestos:</label>
+        <select id="impuestos" name="impuestos[]" multiple required>
+          <option value="4%">4%</option>
+          <option value="7%">7%</option>
+          <option value="16%">16%</option>
+          <option value="25%">25%</option>
+        </select>
+        <br>
+      </div>
+
+      <div>
+        <h3>Promoción</h3>
+        <input type="checkbox" id="promocion_ninguna" name="promocion[]" value="Ninguna">
+        <label for="promocion_ninguna">Ninguna</label>
+        <br>
+        <input type="checkbox" id="promocion_transporte" name="promocion[]" value="Transporte gratuito">
+        <label for="promocion_transporte">Transporte gratuito</label>
+        <br>
+        <input type="checkbox" id="promocion_descuento" name="promocion[]" value="Descuento del 5%">
+        <label for="promocion_descuento">Descuento del 5%</label>
+        <br>
+      </div>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
