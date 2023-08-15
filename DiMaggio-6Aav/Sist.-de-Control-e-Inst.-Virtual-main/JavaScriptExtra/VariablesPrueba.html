@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+a {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: black ;
+        text-align:center;
+        display: block;
+    }
+</style>
+</head>
+
+<body>	
+	<script type="text/javascript">
+		var val1 = 8 ;
+		var val2 = 3 ;
+	 function cuentas(){
+		var  suma 			= val1 + val2;
+		var  resta 			= val1 - val2;
+		var  multiplicacion = val1* val2 ;
+		var  division 		= val1 / val2;
+		var  resto 			= val1%val2 ;
+		
+		document.write("Val1=" + val1);
+		document.write("<br/>Val2=" + val2 + "<br>");
+		document.write("<br/>Suma=" + suma);
+		document.write("<br/>Resta=" + resta);
+		document.write("<br/>Multiplicacion=" + multiplicacion);
+		document.write("<br/>Division=" + division);
+		document.write("<br/>Resto=" + resto);
+	 } 
+	</script>
+	<input type="button" onclick="cuentas()" value="resultado  de las cuentas" />
+	<a href="../index.html">Volver</a>
+</body>
+</html>

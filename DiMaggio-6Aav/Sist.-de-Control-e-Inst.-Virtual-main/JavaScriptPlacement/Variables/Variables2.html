@@ -1,0 +1,28 @@
+<html>
+<head>
+    <style>
+    a {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black ;
+    text-align:center;
+    display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var myVar = "GLOBAL"; // Declare a global variable
+
+        function checkscope( ) {
+        var myVar = "LOCAL"; // Declare a local variable
+        document.write(myVar);
+    }    
+    </script>
+    <input type="button" onclick="checkscope()" value="¿Global o Local?" />
+    <br>
+	<a href="../../index.html">Volver</a>      
+</body>
+</html>
